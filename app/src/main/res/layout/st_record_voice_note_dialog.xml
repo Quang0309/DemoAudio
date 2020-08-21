@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="Recording 01:24"
+        android:textColor="#202325"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Recording will stop in 6 seconds"
+        android:textColor="#a6a7a8"
+        android:textSize="16sp" />
+
+    <com.example.waveview.AudioRecordView
+        android:id="@+id/audio_record"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="80dp"
+        app:chunkMaxHeight="80dp"
+        app:chunkMinHeight="6dp"
+        app:chunkWidth="2dp"
+        app:chunkSpace="2dp"
+        app:chunkColor="#1b92f5"/>
+
+    <com.example.waveview.BtnActionVoiceRecordView
+        android:id="@+id/btn_action_voice_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>
