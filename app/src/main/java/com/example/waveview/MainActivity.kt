@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
                         }
                     }
-                }, 0, 16)
+                }, 0, 100)
             }
             thread.start()
 
@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 
     fun stopRecording() {
         if (isRecording) {
-            //binding.recordView.stopRecording()
+            binding.recordView.audioRecord.stopRecording()
             val voiceNoteFile = getAudioFile(audioId)
             if (stopAndReleaseRecorder()) {
                 val mediaMetadataRetriever = MediaMetadataRetriever()
